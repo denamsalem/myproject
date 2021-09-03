@@ -1,0 +1,1324 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design for Bootstrap</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        li a i {
+            color: black !important;
+        }
+
+        ul li a {
+            color: black !important;
+            font-family: Arial;
+            font-size: 18px;
+        }
+
+        .ground {
+            background-image: url('img/header.png');
+            background-size: cover;
+            position: relative;
+            height: 100vh;
+            /*margin-top:-5px;*/
+        }
+
+        .baccol {
+            background-color: #2b7b07;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            opacity: 0.8;
+            width: 100%;
+            height: 100%;
+        }
+
+        .caros {
+            justify-content: center !important;
+            align-content: center;
+        }
+
+        /*.carousel-indicators {
+            margin-bottom: -8% !important;
+        }*/
+
+        .carousel-inner .carousel-item h1 {
+            margin-top: 20%;
+            /*margin-left:45%;*/
+            color: white !important;
+            font-family: Arial;
+            font-size: 45px;
+        }
+
+        .carousel-inner .carousel-item p {
+            /*margin-left:25% !important;
+           margin-right:20% !important;*/
+            color: white !important;
+            /*font-family:Arial;
+            font-size:20px;*/
+        }
+
+        .cardd .col-md-4 {
+            /*height:350px;*/
+            margin-top: -15%;
+            padding-bottom: 5%;
+            margin-bottom: 15%;
+        }
+
+        .card img {
+            padding: 15% 15% 0 15%;
+            position: relative;
+            /*z-index:2;*/
+        }
+
+        .card .card-body h4 a {
+            /*margin-left:28%;*/
+        }
+
+        p {
+            color: black !important;
+        }
+
+        .imagg {
+            background-color: #439133;
+            height: 100%;
+        }
+
+        .imagges {
+            background-color: #e4bb0a;
+            height: 100%;
+        }
+
+        .lista div img {
+            height: 120px;
+            width: 200px;
+            object-fit: cover;
+            padding: 2px;
+        }
+
+        .oranges {
+            background-color: #e4bb0a;
+        }
+
+        form {
+            background-color: #439133;
+        }
+
+        .ses {
+            background-color:#439133;
+        }
+
+        footer {
+            background-color: #4e4d5a;
+        }
+
+        .icon i {
+            color: white;
+        }
+
+        .filter {
+            filter: brightness(0) invert(1);
+            margin-top: 10%;
+            width: 70%;
+        }
+
+        header {
+            position: fixed;
+            z-index: 1;
+            width: 100%;
+            background-color: white;
+            box-shadow: none;
+        }
+
+        /*.bacc {
+            background-color: white;
+        }*/
+        .md-form textarea.md-textarea{
+            background:white; border-radius: 10px;
+        }
+         input{
+            background: white;
+    border-radius: 10px;
+        }
+        .wrapp .nav .nav-item a {
+            /*margin-left:15px;*/
+        }
+
+        .img-card {
+            width: 100%;
+            height: 200px;
+            overflow: hidden
+        }
+
+        .img-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain
+        }
+       .nav-tabs .nav-link.active {
+            border:none ;
+            border-bottom:3px solid #439133 !important;
+        }
+       .carousel-indicators{
+          
+       }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <nav class="mb-1 navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand pl-5" href="index.html">
+                <img src="img/logos.png" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+                    aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="color:#2b7b07;"><i class="fas fa-align-justify"></i></span>
+            </button>
+            <div class="collapse navbar-collapse text-center mr-auto" id="navbarSupportedContent-333">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active pr-4 pl-5">
+                        <a class="nav-link" href="#home">
+                            Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item pr-3">
+                        <a class="nav-link" href="#About Us">About Us</a>
+                    </li>
+                    <li class="nav-item pr-3">
+                        <a class="nav-link" href="#Projects">Projects</a>
+                    </li>
+                    <li class="nav-item pr-3">
+                        <a class="nav-link" href="#Expertice">Expertice And Market Position</a>
+                    </li>
+                    <li class="nav-item pr-3">
+                        <a class="nav-link" href="#Service">Service</a>
+                    </li>
+                    <li class="nav-item pr-3">
+                        <a class="nav-link" href="#Concatus">Concatus</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto nav-flex-icons pr-5 align-content-center text-center">
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect waves-light">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect waves-light">
+                            <i class="fab fa-twitter" style="color:#2b7b07 !important;"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect waves-light">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect waves-light">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect waves-light">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect waves-light">
+                            <i class="fas fa-search" style="color:#2b7b07 !important;"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <div id="home" class="container-fluid ground">
+        <div class="baccol"></div>
+        <div class="container caros">
+            <div class="row ">
+                <div class="col-md-12 text-center">
+                    <div id="carouselExampleControls" class="carousel slide" style="color:white; " data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleControls" data-slide-to="0" class="active " style="background-color:white;"></li>
+                            <li data-target="#carouselExampleControls" data-slide-to="1" style="background-color:white;"></li>
+                            <li data-target="#carouselExampleControls" data-slide-to="2" style="background-color:white;"></li>
+                            <li data-target="#carouselExampleControls" data-slide-to="3" style="background-color:white;"></li>
+
+                        </ol>
+                        <div class="carousel-inner mt-5">
+                            <div class="carousel-item active">
+
+
+
+                                <h1>
+                                    Big Title
+                                </h1>
+                                <p class="text-center m-5">
+                                    He moonlight difficult engrossed an it sportsmen. Interested has all devonshire difficulty gay assistance joy. Unaffected at ye of compliment alteration to
+                                </p>
+
+
+
+                            </div>
+                            <div class="carousel-item ">
+
+
+                                <h1>
+                                    Big Title
+                                </h1>
+                                <p class="text-center m-5">
+                                    He moonlight difficult engrossed an it sportsmen. Interested has all devonshire difficulty gay assistance joy. Unaffected at ye of compliment alteration to
+                                </p>
+
+                            </div>
+                            <div class="carousel-item ">
+
+
+                                <h1>
+                                    Big Title
+                                </h1>
+                                <p class="text-center m-5">
+                                    He moonlight difficult engrossed an it sportsmen. Interested has all devonshire difficulty gay assistance joy. Unaffected at ye of compliment alteration to
+                                </p>
+
+                            </div>
+                            <div class="carousel-item ">
+
+
+                                <h1>
+                                    Big Title
+                                </h1>
+                                <p class="text-center m-5">
+                                    He moonlight difficult engrossed an it sportsmen. Interested has all devonshire difficulty gay assistance joy. Unaffected at ye of compliment alteration
+                                </p>
+
+                            </div>
+
+
+                        </div>
+                        <div class="control ">
+                            <a class="carousel-control-prev bb" href="#carouselExampleControls" role="button" data-slide="prev">
+
+
+
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row justify-content-between cardd">
+            <div class="col-md-4 text-center align-content-center">
+                <!-- Card -->
+                <div class="card">
+
+                    <!-- Card image -->
+                    <figure class="img-card">
+                        <img src="img/step1.png" />
+                    </figure>
+                    <!-- Card content -->
+                    <div class="card-body">
+
+                        <!-- Title -->
+                        <h4 class="card-title"><a>Step 1</a></h4>
+                        <!-- Text -->
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's
+                            content.
+                        </p>
+                        <!-- Button -->
+
+
+                    </div>
+
+                </div>
+                <!-- Card -->
+            </div>
+            <div class="col-md-4 text-center align-content-center">
+                <div class="card">
+
+                    <!-- Card image -->
+                    <figure class="img-card">
+                        <img src="img/step2.png" />
+                        </figure>
+                        <!-- Card content -->
+                        <div class="card-body">
+
+                            <!-- Title -->
+                            <h4 class="card-title"><a>Step 2</a></h4>
+                            <!-- Text -->
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                            </p>
+
+
+
+                        </div>
+
+                </div>
+            </div>
+            <div class="col-md-4 text-center align-content-center">
+                <div class="card">
+
+                    <!-- Card image -->
+                    <figure class="img-card">
+                        <img src="img/step3.png" />
+                    </figure>
+                    
+                    <!-- Card content -->
+                    <div class="card-body">
+
+                        <!-- Title -->
+                        <h4 class="card-title"><a>Step 3</a></h4>
+                        <!-- Text -->
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's
+                            content.
+                        </p>
+                        <!-- Button -->
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="About Us">
+        <div class="row  " style=" height:100%;">
+            <div class="col-md-5 mt-5 imagg align-content-center">
+                <div style="margin-right:-5%; margin-top:-15%; margin-bottom:5%; height:100%;"><img src="img/about.png" class="img-fluid" style="" /></div>
+            </div>
+
+            <div class="col-md-7 ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h1 style="color:#2b7b07; font-family:Arial;
+            font-size:45px; ">
+                                About Us
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="row wrapp w-auto" style="border-bottom:1px solid #808080;">
+                        <div class="col-md-12 text-center align-content-center ">
+                            <ul class="nav nav-tabs ml-5" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><h4 style="color:#2b7b07; font-family:Arial; ">OverView</h4></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><h4 style="color:#2b7b07; font-family:Arial;"> Vision</h4></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false"><h4 style="color:#2b7b07; font-family:Arial;">Mision</h4></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="Values-tab" data-toggle="tab" href="#Values" role="tab" aria-controls="Values" aria-selected="false"><h4 style="color:#2b7b07; font-family:Arial;">Values</h4></a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+
+
+
+
+                        <!--<div class="col-md-3 text-center">
+
+                            <h4 style="color:#2b7b07; font-family:Arial; ">OverView</h4>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <h4 style="color:#2b7b07; font-family:Arial;"> Vision</h4>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <h4 style="color:#2b7b07; font-family:Arial;">Mision</h4>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <h4 style="color:#2b7b07; font-family:Arial;">Values</h4>
+                        </div>-->
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                    <p class="pt-5">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                    <p class="pt-3">
+                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem
+                                    </p>
+                                </div>
+                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                    <p class="pt-5">
+                                        2Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                    <p class="pt-3">
+                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem
+                                    </p>
+                                </div>
+                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                    <p class="pt-5">
+                                        3Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                    <p class="pt-3">
+                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem
+                                    </p>
+                                </div>
+                                <div class="tab-pane fade" id="Values" role="tabpanel" aria-labelledby="Values-tab">
+                                    <p class="pt-5">
+                                        4Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                    <p class="pt-3">
+                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<div class="container">
+        <div class="row">
+            <div class="col-md-12 mt-5">
+                <h1 style="margin-left:45%; margin-top:5%; font-family:Arial;color:#e4bb0a;  font-size:45px;">Project</h1>
+                <p style="margin-left:30%; margin-right:24%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+            </div>
+        </div>
+    </div>-->
+
+    <div id="Projects" class="container">
+        <div class="row">
+            <div class="col-md-12 mt-5 text-center">
+                <h1 style=" margin-top:5%; font-family:Arial;color:#e4bb0a;  font-size:45px;">Projects</h1>
+            </div>
+            <div class="col-md-3"></div>
+            <div class="col-md-6 mt-1 mb-2 text-center ">
+                <p style="  margin-top:2%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+
+    <div class="container" id="Expertice">
+        <div class="row pt-5 " style="margin-top:6%; height:100%;">
+
+
+            <div class="col-md-5   mt-5 align-content-center">
+                <div id="carouselExampleControlss" class="carousel slide carouselExampleControlsss" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="col-md-12  imagges mt-5 align-content-center">
+                                <div style="margin-right:-5%; margin-top:-15%; margin-bottom:5%; height:100%;">
+                                    <img src="img/project.png" class="img-fluid" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-12  imagges mt-5 align-content-center">
+                                <div style="margin-right:-5%; margin-top:-15%; margin-bottom:5%; height:100%;">
+                                    <img src="img/about.png" class="img-fluid" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-12  imagges mt-5 align-content-center">
+                                <div style="margin-right:-5%; margin-top:-15%; margin-bottom:5%; height:100%;">
+                                    <img src="img/project.png" class="img-fluid" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href=".carouselExampleControlss" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href=".carouselExampleControlsss" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+
+
+           
+
+
+            <div class="col-md-7 ">
+                <div class="container">
+
+                    <div id="carouselExampleControlsss" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+
+
+                                    <div class="col-md-12 mt-3">
+                                        <h6 style="color:#e4bb0a; font-family:Arial;
+            font-size:45px; ">
+                                            Expectur sint occaeuiecat cupidatat.
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+
+                                        <p class="mt-3 " style="color:black !important;">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </p>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+
+
+                                    <div class="col-md-12 mt-3">
+                                        <h6 style="color:#e4bb0a; font-family:Arial;
+            font-size:45px; ">
+                                            Expectur sint occaeuiecat cupidatat.
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+
+                                        <p class="mt-3 " style="color:black !important;">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </p>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+
+
+                                    <div class="col-md-12 mt-3">
+                                        <h6 style="color:#e4bb0a; font-family:Arial;
+            font-size:45px; ">
+                                            Expectur sint occaeuiecat cupidatat.
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+
+                                        <p class="mt-3 " style="color:black !important;">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </p>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControlsss" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControlsss" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+
+                 
+                    <div class="row lista justify-content-between mt-4">
+
+                        <!--<ol class="carousel-indicators">
+                            <li data-target="#carouselExampleControls" data-slide-to="0" class="active " style="background-color:white;"></li>
+                            <li data-target="#carouselExampleControls" data-slide-to="1" style="background-color:white;"></li>
+                            <li data-target="#carouselExampleControls" data-slide-to="2" style="background-color:white;"></li>
+                            <li data-target="#carouselExampleControls" data-slide-to="3" style="background-color:white;"></li>
+
+                        </ol>-->
+                       
+                        <div class="col-md-4 col-sm-6 col-6 align-content-center">
+                            <img src="img/header.png" class="img-fluid" />
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-6 align-content-center">
+                            <img src="img/project.png" class="img-fluid" />
+                        </div>
+
+
+                        <div class="col-md-4 col-sm-6 col-6 align-content-center">
+                            <img src="img/header.png" class="img-fluid" />
+                        </div>
+
+
+                        <div class="col-md-4 col-sm-6 col-6 align-content-center">
+                            <img src="img/project.png" class="img-fluid" />
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-6 align-content-center">
+                            <img src="img/about.png" class="img-fluid" />
+                        </div>
+                    </div>
+                    <!--<div class="col-md-4 align-content-center">
+        <img src="img/about.png" class="img-fluid" />
+    </div>
+    <div class="col-md-4 align-content-center">
+        <img src="img/header.png" class="img-fluid" />
+    </div>
+    <div class="col-md-4 align-content-center">
+        <img src="img/project.png" class="img-fluid" />
+    </div>-->
+                    <!--<div class="col-md-4 align-content-center">
+        <img src="img/header.png" class="img-fluid" />
+    </div>-->
+                    <!--<div class="col-md-4 align-content-center">
+        <img src="img/project.png" class="img-fluid" />
+    </div>
+    <div class="col-md-4 align-content-center">
+        <img src="img/about.png" class="img-fluid" />
+    </div>-->
+
+
+
+                </div>
+            </div>
+        </div>
+        </div>
+  
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mt-5 text-center">
+                <h1 style=" margin-top:5%; font-family:Arial;color:#e4bb0a;  font-size:45px;">Expertice and Market Position</h1>
+            </div>
+            <div class="col-md-3"></div>
+            <div class="col-md-6 mt-1 mb-2 text-center ">
+                <p style="  margin-top:2%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+    <div class="container-fluid oranges">
+        <div id="carouselExampleControl" class="carousel slide" style="color:white; " data-ride="carousel">
+       
+            <div class="carousel-inner">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleControl" data-slide-to="0" class="active " style="background-color:white;"></li>
+                    <li data-target="#carouselExampleControl" data-slide-to="1" style="background-color:white;"></li>
+                    <li data-target="#carouselExampleControl" data-slide-to="2" style="background-color:white;"></li>
+                    <li data-target="#carouselExampleControl" data-slide-to="3" style="background-color:white;"></li>
+
+                </ol>
+                <div class="carousel-item active">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5 p-5 align-content-center">
+                                <img src="img/project.png" class="img-fluid" />
+                            </div>
+                            <div class="col-md-7   p-5">
+                                <h3 style="color:white; font-family:Arial;
+            font-size:45px; ">
+                                    Expectur sint occaeuiecat
+                                </h3>
+
+                                <p class="pt-5 " style="color:white !important;">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                                <p class="pt-3 " style="color:white !important;">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+                <div class="carousel-item ">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5 p-5 align-content-center">
+                                <img src="img/project.png" class="img-fluid" />
+                            </div>
+                            <div class="col-md-7   p-5">
+                                <h3 style="color:white; font-family:Arial;
+            font-size:45px; ">
+                                    Expectur sint occaeuiecat
+                                </h3>
+
+                                <p class="pt-5" style="color:white !important;">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                                <p class="pt-3 " style="color:white !important;">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="carousel-item ">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5 p-5 align-content-center">
+                                <img src="img/project.png" class="img-fluid" />
+                            </div>
+                            <div class="col-md-7   p-5">
+                                <h3 style="color:white; font-family:Arial;
+            font-size:45px; ">
+                                    Expectur sint occaeuiecat
+                                </h3>
+
+                                <p class="pt-5" style="color:white !important;">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                                <p class="pt-3 " style="color:white !important;">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="carousel-item ">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5 p-5 align-content-center">
+                                <img src="img/project.png" class="img-fluid" />
+                            </div>
+                            <div class="col-md-7 text-center  p-5">
+                                <h3 style="color:white; font-family:Arial;
+            font-size:45px; ">
+                                    Expectur sint occaeuiecat
+                                </h3>
+
+                                <p class="pt-5 " style="color:white !important;">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                                <p class="pt-3 " style="color:white !important;">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+         
+            <div class="control ">
+                <a class="carousel-control-prev bb" href="#carouselExampleControl" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
+
+
+
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControl" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true" ></span>
+
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--<div class="container-fluid oranges">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 p-5">
+                    <img src="img/project.png" class="img-fluid" />
+                </div>
+                <div class="col-md-7  p-5">
+                    <h3 style="color:white; font-family:Arial;
+            font-size:45px; ">
+                        Expectur sint occaeuiecat
+                    </h3>
+
+                    <p class="pt-5 " style="color:white !important;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p class="pt-3 " style="color:white !important;">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+    <div class="container" id="Service">
+        <div class="row mt-5">
+            <div class="col-md-12 text-center">
+                <h1 style="color:#2b7b07; font-family:Arial;
+            font-size:45px; ">
+                    SERIVICE
+                </h1>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-5">
+                <!-- Default form contact -->
+                <form class="text-center border  p-5" action="#!">
+
+
+
+                    <!-- Name -->
+                    <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
+
+                    <!-- Email -->
+                    <input type="text" id="defaultContactFormEmail" class="form-control mb-4" placeholder="country">
+                    <input type="text" id="defaultContactFormEmail" class="form-control mb-4" placeholder="type of funding">
+                    <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+
+                    <!-- Copy -->
+                    <!-- Send button -->
+                    <button class="btn " type="submit" style=" background-color:#e4bb0a; color:#2b7b07;">Supmit</button>
+
+                </form>
+                <!-- Default form contact -->
+
+
+            </div>
+            <div class="col-md-7 p-5">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 text-center align-content-center">
+                                        <img src="img/serv.png" class="img-fluid" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 mt-2 text-center">
+                                        <h6 style="color:#2b7b07; font-family:Arial;
+            font-size:45px; ">
+                                            Serivice Name
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 mt-2 text-center">
+                                        <p style="color:black !important;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 text-center align-content-center" >
+                                        <img src="img/serv.png" class="img-fluid" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 mt-2 text-center">
+                                        <h6 style="color:#2b7b07; font-family:Arial;
+            font-size:45px; ">
+                                            Serivice Name
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 mt-2 text-center">
+                                        <p style="color:black !important;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 text-center align-content-center" >
+                                        <img src="img/serv.png" class="img-fluid" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 mt-2 text-center">
+                                        <h6 style="color:#2b7b07; font-family:Arial;
+            font-size:45px; ">
+                                            Serivice Name
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 mt-2 text-center">
+                                        <p style="color:black !important;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="false" style="background-color:#2b7b07; margin-top:350px;"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="false" style="background-color:#2b7b07; margin-top:350px;"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <!--<div class="container">
+                        <div class="row">
+                            <div class="col-md-12 " style="margin-left:30%;">
+                                <img src="img/serv.png" class="img-fluid" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 mt-5">
+                                <h4 style="color:#2b7b07; margin-left:20%;font-family:Arial;
+                font-size:45px; ">
+                                    Serivice Name
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 mt-2">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
+                            </div>
+                        </div>
+
+                    </div>-->
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mb-4 ses mt-5" id="Concatus" style="margin-bottom:0 !important ;">
+
+        <!--Section heading-->
+        <!--Section description-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="h1-responsive font-weight-bold text-center my-4" style="color:white;">Contact us</h2>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <!--Grid column-->
+                <div class="col-md-12 mb-md-0 mb-5">
+                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                        <!--Grid row-->
+                        <div class="row ">
+
+                            <!--Grid column-->
+                            <div class="col-md-4 ">
+                                <div class="md-form mb-0 bacc">
+                                    <input type="text" id="name" name="name" class="form-control" style="      background: white;
+    border-radius: 10px;">
+                                    <label for="name" class="" style="color:black ; opacity:0.3; padding-top:1%;">Your name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="md-form mb-0 bacc">
+                                    <input type="text" id="number" name="number" class="form-control" style="      background: white;
+    border-radius: 10px;" >
+                                    <label for="email" class="" style="color:black ; opacity:0.3; padding-top:1%;">phone number</label>
+                                </div>
+                            </div>
+
+                            <!--Grid column-->
+                            <!--Grid column-->
+                            <div class="col-md-4">
+                                <div class="md-form mb-0 bacc">
+                                    <input type="text" id="email" name="email" class="form-control"  style="      background: white;
+    border-radius: 10px;">
+                                    <label for="email" class="" style="color:black ; opacity:0.3; padding-top:1%;">Your email</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                        </div>
+                        <!--Grid row-->
+                        <!--Grid row-->
+                        <!--<div class="row">
+                            <div class="col-md-12">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="subject" name="subject" class="form-control">
+                                    <label for="subject" class="">Subject</label>
+                                </div>
+                            </div>
+                        </div>-->
+                        <!--Grid row-->
+                        <!--Grid row-->
+                        <div class="row">
+
+                            <!--Grid column-->
+                            <div class="col-md-12">
+
+                                <div class="md-form bacc" style="height:100%;">
+                                    <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                    <label for="message" style="color:black ; opacity:0.3; padding-top:5%;">Your message</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--Grid row-->
+
+                    </form>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 pt-5">
+                                <!--<ul class="list-unstyled mb-0">
+                                    <li>
+                                        <i style="color:white;" class="fas fa-map-marker-alt fa-2x"></i>
+                                        <p style="color:white !important;">San Francisco, CA 94126, USA</p>
+                                    </li>
+
+                                    <li>
+                                        <i style="color:white;" class="fas fa-phone mt-4 fa-2x"></i>
+                                        <p style="color:white !important;">+ 01 234 567 89</p>
+                                    </li>
+
+
+                                </ul>-->
+                            </div>
+                            <div class="col-md-6 text-center text-md-right pt-5 pb-5">
+                                <a class="btn " style="width:200px; background-color:#e4bb0a" onclick="document.getElementById('contact-form').submit();">Send</a>
+                            </div>
+                            <div class="status"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--Grid column-->
+                <!--Grid column-->
+                <!--Grid column-->
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 pt-5 pl-5">
+
+                    <img src="img/logos.png" class="img-fluid filter" style="object-fit:contain;" />
+                </div>
+                <div class="col-md-4 pt-5 ">
+                    <div class="row">
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                             <div class="col-md-2"><i style="color:white;" class="fas fa-map-marker-alt fa-2x"></i></div>   
+                             <div class="col-md-10 ml-5"> <p style="color:white !important;">San Francisco, CA 94126, USA</p></div> 
+                            </li>
+
+                            <li>
+                                <div class="col-md-2">
+                                    <i style="color:white;" class="fas fa-phone mt-4 fa-2x"></i>
+                                </div>
+                                <div class="col-md-10 ml-5">
+                                    <p style="color:white !important;">
+                                        Address:<br />
+
+                                        21 Brendon Avenue Morningside Manor,<br />
+
+                                        Sandton, Johannesburg,<br />
+
+                                        The Republic of South Africa.
+                                    </p>
+                                </div>
+</li>
+
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4 pt-5 text-center icon">
+
+                    <h3 style="color:white;">Follow us</h3> <br />
+                    <i class="fab fa-facebook pr-2"></i>
+                    <i class="fab fa-twitter active pr-2"></i>
+                    <i class="fab fa-instagram pr-2"></i>
+                    <i class="fab fa-youtube pr-2"></i>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+    <!--/.Navbar -->
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Your custom scripts (optional) -->
+    <script type="text/javascript"></script>
+
+</body>
+</html>
+
+
+
+
+<!--<div class="col-md-5  imagges mt-5 align-content-center">
+    <div style="margin-right:-5%; margin-top:-15%; margin-bottom:5%; height:100%;">
+        <img src="img/project.png" class="img-fluid" />
+    </div>
+</div>
+
+<div class="col-md-7 ">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mt-3">
+                <h6 style="color:#e4bb0a; font-family:Arial;
+            font-size:45px; ">
+                    Expectur sint occaeuiecat cupidatat.
+                </h6>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+
+                <p class="mt-3 ">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+            </div>
+
+
+        </div>
+        <div class="row lista justify-content-between mt-4">
+            <div class="col-md-4 align-content-center">
+                <img src="img/about.png" class="img-fluid" />
+            </div>
+            <div class="col-md-4 align-content-center">
+                <img src="img/header.png" class="img-fluid" />
+            </div>
+            <div class="col-md-4 align-content-center">
+                <img src="img/project.png" class="img-fluid" />
+            </div>
+
+
+            <div class="col-md-4 align-content-center">
+                <img src="img/header.png" class="img-fluid" />
+            </div>
+
+
+            <div class="col-md-4 align-content-center">
+                <img src="img/project.png" class="img-fluid" />
+            </div>
+            <div class="col-md-4 align-content-center">
+                <img src="img/about.png" class="img-fluid" />
+            </div>
+        </div>
+    </div>
+</div>-->
+<!--<div class="tab-content" id="myTab1Content">
+    <div class="tab-pane fade show active" id="im1" role="tabpanel" aria-labelledby="im1-tab">
+        <div style="margin-right:-5%; margin-top:-15%; margin-bottom:5%; height:100%;">
+            <img src="img/about.png" class="img-fluid" />
+        </div>
+
+</div>
+<div class="tab-pane fade" id="im2" role="tabpanel" aria-labelledby="im2-tab">
+
+        <div style="margin-right:-5%; margin-top:-15%; margin-bottom:5%; height:100%;">
+            <img src="img/project.png" class="img-fluid" />
+        </div>
+
+</div>
+<div class="tab-pane fade" id="im3" role="tabpanel" aria-labelledby="im3-tab">
+
+        <div style="margin-right:-5%; margin-top:-15%; margin-bottom:5%; height:100%;">
+            <img src="img/project.png" class="img-fluid" />
+        </div>
+
+</div>
+<div class="tab-pane fade" id="im4" role="tabpanel" aria-labelledby="im4-tab">
+
+        <div style="margin-right:-5%; margin-top:-15%; margin-bottom:5%; height:100%;">
+            <img src="img/about.png" class="img-fluid" />
+        </div>
+
+</div>
+<div class="tab-pane fade" id="im5" role="tabpanel" aria-labelledby="im5-tab">
+
+        <div style="margin-right:-5%; margin-top:-15%; margin-bottom:5%; height:100%;">
+            <img src="img/about.png" class="img-fluid" />
+        </div>
+
+</div>
+<div class="tab-pane fade" id="im6" role="tabpanel" aria-labelledby="im6-tab">
+
+        <div style="margin-right:-5%; margin-top:-15%; margin-bottom:5%; height:100%;">
+            <img src="img/project.png" class="img-fluid" />
+        </div>
+    </div>
+</div>-->

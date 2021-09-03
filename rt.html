@@ -1,0 +1,432 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+          crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <style>
+        li a i {
+            color: black !important;
+        }
+
+        ul li a {
+            color: black !important;
+            font-family: Arial;
+            font-size: 18px;
+        }
+
+        li a i {
+            color: black !important;
+        }
+
+        ul li a {
+            color: black !important;
+            font-family: Arial;
+            font-size: 18px;
+        }
+
+        footer {
+            background-color: #4e4d5a;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="mb-1 navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand pl-5" href="index.html">
+            <img src="img/logos.png" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+                aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="color:#2b7b07;"><i class="fas fa-align-justify"></i></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarSupportedContent-333">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active pr-4 pl-5">
+                    <a class="nav-link" href="#home">
+                        الرئيسية
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item pr-3">
+                    <a class="nav-link" href="#About Us">حول الموقع</a>
+                </li>
+                <li class="nav-item pr-3">
+                    <a class="nav-link" href="#Projects">من نحن </a>
+                </li>
+                <li class="nav-item pr-3">
+                    <a class="nav-link" href="#Expertice">اتصل بنا</a>
+                </li>
+                <li class="nav-item pr-3">
+                    <a class="nav-link" href="#Service">Service</a>
+                </li>
+                <li class="nav-item pr-3">
+                    <a class="nav-link" href="#Concatus">الدخول</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto nav-flex-icons pr-5 align-content-center text-center">
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light">
+                        <i class="fab fa-twitter" style="color:#2b7b07 !important;"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light">
+                        <i class="fas fa-search" style="color:#2b7b07 !important;"></i>
+                    </a>
+                </li>
+
+            </ul>
+
+
+        </div>
+    </nav>
+
+
+
+
+    <div class="container mt-5 row justify-content-between" style="margin-left:10%;">
+        <!--search bar-->
+        <div class="row" id="search-bar">
+            <form class="form-inline col-12">
+                <label class="sr-only" for="inlineFormInputName2">Name</label>
+                <input type="text" class="form-control mb-2 mr-sm-2" id="search" placeholder="search name ...">
+                <button type="submit" class="btn btn-primary mb-2" id="submit-search">Search</button>
+
+            </form>
+        </div>
+        <div class="form-inline">
+            <div id="card">
+                <a href="rt.html">
+                    <button style="border:2px  none;background-color:white;">
+                        <i class="fas fa-th p-1" data-mode="card"></i>
+
+                    </button>
+                </a>
+            </div>
+            <div id="list">
+                <a href="p2.html">
+                    <button style=" border:2px  none;background-color:white;">
+                        <i class="fas fa-bars p-1" data-mode="list"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+
+
+
+        <!-- data-panel -->
+        <div class="row" id="data-panel">
+            <div class="col-sm-3">
+                <div class="card mb-2">
+                    <img class="card-img-top " src="image/er.jpg" alt="Card image cap" />
+                    <!--<img  src="https://movie-list.alphacamp.io/posters/o6EsOqITcSzcdwD1zxBM9imdxjr.jpg" "=" " >-->
+                    <div class="card-body movie-item-body">
+                        <h6 class="card-title">سلوى يعقوب</h6>
+                    </div>
+                    <!-- "More" button -->
+                    <div class="card-footer">
+                        <button class="btn btn-primary btn-show-movie" data-toggle="modal" data-target="#show-movie-modal" data-id="37">الصفحة الشخصية</button>
+                        <!-- favorite button -->
+                        <button class="btn btn-info btn-add-favorite" data-id="37">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="card mb-2">
+                    <img class="card-img-top " src="image/lkl.jpg" alt="Card image cap" />
+                    <!--<img  src="https://movie-list.alphacamp.io/posters/4FYu1AAu14tuBU0lns0hbKiHUcH.jpg" "=" ">-->
+                    <div class="card-body movie-item-body">
+                        <h6 class="card-title">ناهد محمد</h6>
+                    </div>
+                    <!-- "More" button -->
+                    <div class="card-footer">
+                        <button class="btn btn-primary btn-show-movie" data-toggle="modal" data-target="#show-movie-modal" data-id="38">الصفحة الشخصية</button>
+                        <!-- favorite button -->
+                        <button class="btn btn-info btn-add-favorite" data-id="38">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="card mb-2">
+                    <img class="card-img-top " src="image/rr.jpg" alt="Card image cap" />
+                    <!--<img  src="https://movie-list.alphacamp.io/posters/dCtFvscYcXQKTNvyyaQr2g2UacJ.jpg" "=" " >-->
+                    <div class="card-body movie-item-body">
+                        <h6 class="card-title">صبرين موسى</h6>
+                    </div>
+                    <!-- "More" button -->
+                    <div class="card-footer">
+                        <button class="btn btn-primary btn-show-movie" data-toggle="modal" data-target="#show-movie-modal" data-id="39">الصفحة الشخصية</button>
+                        <!-- favorite button -->
+                        <button class="btn btn-info btn-add-favorite" data-id="39">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="card mb-2">
+                    <img class="card-img-top " src="image/rrwq.jpg" alt="Card image cap" />
+                    <!--<img  src="https://movie-list.alphacamp.io/posters/cQvc9N6JiMVKqol3wcYrGshsIdZ.jpg" "=" " >-->
+                    <div class="card-body movie-item-body">
+                        <h6 class="card-title">عاهد محمد</h6>
+                    </div>
+                    <!-- "More" button -->
+                    <div class="card-footer">
+                        <button class="btn btn-primary btn-show-movie" data-toggle="modal" data-target="#show-movie-modal" data-id="40">الصفحة الشخصية</button>
+                        <!-- favorite button -->
+                        <button class="btn btn-info btn-add-favorite" data-id="40">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="card mb-2">
+                    <img class="card-img-top " src="image/rte.jpg" alt="Card image cap" />
+                    <!--<img  src="https://movie-list.alphacamp.io/posters/cezWGskPY5x7GaglTTRN4Fugfb8.jpg" "=" " >-->
+                    <div class="card-body movie-item-body">
+                        <h6 class="card-title">فادي حسين</h6>
+                    </div>
+                    <!-- "More" button -->
+                    <div class="card-footer">
+                        <button class="btn btn-primary btn-show-movie" data-toggle="modal" data-target="#show-movie-modal" data-id="41">الصفحة الشخصية</button>
+                        <!-- favorite button -->
+                        <button class="btn btn-info btn-add-favorite" data-id="41">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="card mb-2">
+                    <img class="card-img-top " src="image/yy.jpg" alt="Card image cap" />
+                    <!--<img  src="https://movie-list.alphacamp.io/posters/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg" "=" ">-->
+                    <div class="card-body movie-item-body">
+                        <h6 class="card-title">شرين حسين</h6>
+                    </div>
+                    <!-- "More" button -->
+                    <div class="card-footer">
+                        <button class="btn btn-primary btn-show-movie" data-toggle="modal" data-target="#show-movie-modal" data-id="42">الصفحة الشخصية</button>
+                        <!-- favorite button -->
+                        <button class="btn btn-info btn-add-favorite" data-id="42">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="card mb-2">
+                    <img class="card-img-top " src="image/uo.jpg" alt="Card image cap" />
+                    <!--<img  src="https://movie-list.alphacamp.io/posters/8GJ9a0FgkCKIqKvGtkppTTALGG3.jpg" "=" " >-->
+                    <div class="card-body movie-item-body">
+                        <h6 class="card-title">فاطمة محمود</h6>
+                    </div>
+                    <!-- "More" button -->
+                    <div class="card-footer">
+                        <button class="btn btn-primary btn-show-movie" data-toggle="modal" data-target="#show-movie-modal" data-id="43">الصفحة الشخصية</button>
+                        <!-- favorite button -->
+                        <button class="btn btn-info btn-add-favorite" data-id="43">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="card mb-2">
+                    <img class="card-img-top " src="image/tyr.jpg" alt="Card image cap" />
+                    <!--<img  src="https://movie-list.alphacamp.io/posters/zbvziwnZa91AJD78Si0hUb5JP5X.jpg" "=" " >-->
+                    <div class="card-body movie-item-body">
+                        <h6 class="card-title">فداء علي</h6>
+                    </div>
+                    <!-- "More" button -->
+                    <div class="card-footer">
+                        <button class="btn btn-primary btn-show-movie" data-toggle="modal" data-target="#show-movie-modal" data-id="44">الصفحة الشخصية</button>
+                        <!-- favorite button -->
+                        <button class="btn btn-info btn-add-favorite" data-id="44">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="card mb-2">
+                    <img class="card-img-top " src="image/rrwq.jpg" alt="Card image cap" />
+
+                    <!--<img class="card-img-top " src="https://movie-list.alphacamp.io/posters/gGBu0hKw9BGddG8RkRAMX7B6NDB.jpg" "=" " alt="Card image cap">-->
+                    <div class="card-body movie-item-body">
+                        <h6 class="card-title">رنيم محمد </h6>
+                    </div>
+                    <!-- "More" button -->
+                    <div class="card-footer">
+                        <button class="btn btn-primary btn-show-movie" data-toggle="modal" data-target="#show-movie-modal" data-id="45">الصفحة الشخصية</button>
+                        <!-- favorite button -->
+                        <button class="btn btn-info btn-add-favorite" data-id="45">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="card mb-2">
+                    <img class="card-img-top " src="image/rte.jpg" alt="Card image cap" />
+
+                    <!--<img class="card-img-top " src="https://movie-list.alphacamp.io/posters/btTdmkgIvOi0FFip1sPuZI2oQG6.jpg" "=" " alt="Card image cap">-->
+                    <div class="card-body movie-item-body">
+                        <h6 class="card-title">سها خالد</h6>
+                    </div>
+                    <!-- "More" button -->
+                    <div class="card-footer">
+                        <button class="btn btn-primary btn-show-movie" data-toggle="modal" data-target="#show-movie-modal" data-id="46">الصفحة الشخصية</button>
+                        <!-- favorite button -->
+                        <button class="btn btn-info btn-add-favorite" data-id="46">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="card mb-2">
+                    <img class="card-img-top " src="image/tyr.jpg" alt="Card image cap" />
+
+                    <!--<img class="card-img-top " src="https://movie-list.alphacamp.io/posters/y4MBh0EjBlMuOzv9axM4qJlmhzz.jpg" "=" " alt="Card image cap">-->
+                    <div class="card-body movie-item-body">
+                        <h6 class="card-title">محمد عبدو</h6>
+                    </div>
+                    <!-- "More" button -->
+                    <div class="card-footer">
+                        <button class="btn btn-primary btn-show-movie" data-toggle="modal" data-target="#show-movie-modal" data-id="47">الصفحة الشخصية</button>
+                        <!-- favorite button -->
+                        <button class="btn btn-info btn-add-favorite" data-id="47">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="card mb-2">
+                    <img class="card-img-top " src="image/lkl.jpg" alt="Card image cap" />
+
+                    <!--<img class="card-img-top " src="https://movie-list.alphacamp.io/posters/c24sv2weTHPsmDa7jEMN0m2P3RT.jpg" "=" " alt="Card image cap">-->
+                    <div class="card-body movie-item-body">
+                        <h6 class="card-title">منتهى رجب</h6>
+                    </div>
+                    <!-- "More" button -->
+                    <div class="card-footer">
+                        <button class="btn btn-primary btn-show-movie" data-toggle="modal" data-target="#show-movie-modal" data-id="48">الصفحة الشخصية</button>
+                        <!-- favorite button -->
+                        <button class="btn btn-info btn-add-favorite" data-id="48">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-center" id="pagination">
+            <li class="page-item">
+                <a class="page-link" href="javascript:;" data-page="1">1</a>
+            </li>
+
+            <li class="page-item">
+                <a class="page-link" href="javascript:;" data-page="2">2</a>
+            </li>
+
+            <li class="page-item">
+                <a class="page-link" href="javascript:;" data-page="3">3</a>
+            </li>
+
+            <li class="page-item">
+                <a class="page-link" href="javascript:;" data-page="4">4</a>
+            </li>
+
+            <li class="page-item">
+                <a class="page-link" href="javascript:;" data-page="5">5</a>
+            </li>
+
+            <li class="page-item">
+                <a class="page-link" href="javascript:;" data-page="6">6</a>
+            </li>
+
+            <li class="page-item">
+                <a class="page-link" href="javascript:;" data-page="7">7</a>
+            </li>
+        </ul>
+    </nav>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 pt-5 pl-5">
+
+                    <img src="img/logos.png" class="img-fluid filter" style="object-fit:contain;" />
+                </div>
+                <div class="col-md-4 pt-5 ">
+                    <div class="row">
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <div class="col-md-2"><i style="color:white;" class="fas fa-map-marker-alt fa-2x"></i></div>
+                                <div class="col-md-10 ml-5"> <p style="color:white !important;">San Francisco, CA 94126, USA</p></div>
+                            </li>
+
+                            <li>
+                                <div class="col-md-2">
+                                    <i style="color:white;" class="fas fa-phone mt-4 fa-2x"></i>
+                                </div>
+                                <div class="col-md-10 ml-5">
+                                    <p style="color:white !important;">
+                                        Address:<br />
+
+                                        21 Brendon Avenue Morningside Manor,<br />
+
+                                        Sandton, Johannesburg,<br />
+
+                                        The Republic of South Africa.
+                                    </p>
+                                </div>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4 pt-5 text-center icon">
+
+                    <h3 style="color:white;">Follow us</h3> <br />
+                    <i class="fab fa-facebook pr-2"></i>
+                    <i class="fab fa-twitter active pr-2"></i>
+                    <i class="fab fa-instagram pr-2"></i>
+                    <i class="fab fa-youtube pr-2"></i>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+    <!--<script src="index.js"></script>-->
+    <script src="a231/dist/script.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+            crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>-->
+</body>
+</html>
